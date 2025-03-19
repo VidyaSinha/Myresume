@@ -1,0 +1,202 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 97%;
+
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 97%;
+
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 97%;
+
+    --primary: 0 80% 50%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 97%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 97%;
+
+    --destructive: 0 80% 50%;
+    --destructive-foreground: 0 0% 97%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 0 80% 50%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-ai-black text-foreground antialiased;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+    scroll-behavior: smooth;
+  }
+
+  ::selection {
+    @apply bg-ai-red/30 text-white;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply backdrop-blur-md bg-ai-gray/40 border border-ai-red/10 shadow-lg transition-all duration-300;
+  }
+  
+  .ai-card {
+    @apply rounded-xl glass-panel p-6 transition-all duration-300 hover:bg-ai-lightGray/50 hover:border-ai-red/20 hover:transform hover:scale-105 hover:shadow-xl;
+  }
+  
+  .ai-button {
+    @apply relative inline-flex items-center justify-center px-6 py-3 overflow-hidden text-white bg-ai-red rounded-lg transition-all duration-300;
+  }
+  
+  /* Use the group class directly on the HTML element instead */
+  .ai-button::after {
+    @apply absolute top-0 right-0 w-12 h-full -skew-x-12 transform translate-x-32 bg-white opacity-10 transition-all duration-1000 ease-out;
+    content: '';
+  }
+  
+  /* Add this for the hover effect */
+  .group:hover .ai-button::after {
+    @apply translate-x-0;
+  }
+  
+  .section-heading {
+    @apply text-3xl md:text-4xl font-bold mb-8 text-white relative inline-block;
+  }
+  
+  .section-heading::after {
+    @apply content-[''] absolute -bottom-2 left-0 h-1 bg-ai-red transition-all duration-500;
+    width: 60%;
+  }
+  
+  .section-heading:hover::after {
+    @apply w-full;
+  }
+  
+  .skill-bar {
+    @apply h-2 bg-ai-red/20 rounded-full overflow-hidden;
+  }
+  
+  .skill-progress {
+    @apply h-full bg-ai-red rounded-full animate-pulse-red;
+  }
+  
+  .matrix-bg {
+    background-image: linear-gradient(rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.95)), 
+                     url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23E31B23' fill-opacity='0.15'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  
+  /* New animation classes */
+  .hover-lift {
+    @apply transition-transform duration-300 hover:translate-y-[-8px];
+  }
+  
+  .pulse-shadow {
+    animation: pulse-shadow 3s infinite;
+  }
+  
+  .border-glow {
+    @apply relative;
+  }
+  
+  .border-glow::before {
+    content: '';
+    @apply absolute -inset-0.5 rounded-xl bg-gradient-to-r from-ai-red to-ai-darkRed opacity-0 blur transition duration-700;
+    z-index: -1;
+  }
+  
+  .border-glow:hover::before {
+    @apply opacity-50;
+  }
+  
+  .text-shimmer {
+    @apply relative;
+    background-image: linear-gradient(90deg, #A70000, #fff, #A70000);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: text-shimmer 5s linear infinite;
+  }
+}
+
+.staggered-appear {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.staggered-appear-visible {
+  animation: staggered-appear 0.6s ease forwards;
+}
+
+@keyframes staggered-appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-shadow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(167, 0, 0, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px 5px rgba(167, 0, 0, 0.7);
+  }
+}
+
+@keyframes text-shimmer {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes float-rotate {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+  75% {
+    transform: translateY(10px) rotate(-2deg);
+  }
+}
+
+@keyframes blob-morph {
+  0%, 100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  25% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  50% {
+    border-radius: 40% 60% 30% 70% / 60% 40% 60% 30%;
+  }
+  75% {
+    border-radius: 60% 40% 70% 30% / 30% 60% 40% 70%;
+  }
+}
