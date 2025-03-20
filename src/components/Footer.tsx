@@ -13,7 +13,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/97e1e9cb-4398-41c3-9ae4-91ca51c88c53.png" 
                 alt="Vidya Sinha Logo" 
-                className="h-18 w-auto" 
+                className="h-15 w-auto" 
               />
               <div>
                 <span className="font-bold text-xl tracking-tight text-white">
