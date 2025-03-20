@@ -13,7 +13,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/97e1e9cb-4398-41c3-9ae4-91ca51c88c53.png" 
                 alt="Vidya Sinha Logo" 
-                className="h-16 w-auto" 
+                className="h-25 w-auto" 
               />
               <div>
                 <span className="font-bold text-xl tracking-tight text-white">
@@ -60,7 +60,7 @@ const Footer = () => {
             &copy; {currentYear} Vidya Sinha. All rights reserved.
           </p>
           <p className="text-gray-500 text-sm mt-4 md:mt-0 flex items-center">
-            Made with <Heart className="inline-block w-4 h-4 mx-1 text-ai-red" /> and AI
+            Keep smiling <Heart className="inline-block w-4 h-4 mx-1 text-ai-red" /> 
           </p>
         </div>
       </div>
