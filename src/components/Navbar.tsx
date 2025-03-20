@@ -37,7 +37,7 @@ const Navbar = () => {
             <img 
               src="/lovable-uploads/97e1e9cb-4398-41c3-9ae4-91ca51c88c53.png" 
               alt="Vidya Sinha Logo" 
-              className="h-15 w-auto" 
+              className="h-11 w-auto" 
             />
             <span className="font-bold text-xl tracking-tight">
               Vidya<span className="text-ai-red">Sinha</span>
