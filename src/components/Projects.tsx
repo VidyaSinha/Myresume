@@ -4,11 +4,11 @@ import { Github, ExternalLink, Activity, Brain, Code, Users, Database, Shield, L
 
 const projects = [
   {
-    title: "PethubA Platform",
+    title: "PetHub",
     description: "Developed during HackTheMountains hackathon, this platform connects pet owners with caretakers and adopters. Features include real-time chat, video calls, and secure management of adoption offers.",
     tech: ["React", "Node.js", "MongoDB", "Jitsi API"],
     image: null,
-    github: "#",
+    github: "https://github.com/VidyaSinha/PETHUB",
     demo: "#",
     icon: <MessageCircle className="w-6 h-6 text-ai-red opacity-70" />
   },
@@ -27,7 +27,7 @@ const projects = [
     tech: ["Advanced Java", "Web Development", "UI/UX", "Database"],
     image: null,
     github: "#",
-    demo: "#",
+    demo: "https://vidyabharti20.github.io/Art",
     icon: <Users className="w-6 h-6 text-ai-red opacity-70" />
   },
   {
@@ -35,8 +35,8 @@ const projects = [
     description: "Built a comprehensive system for managing institutional accreditation processes and organizing large volumes of assessment data for educational institutions.",
     tech: ["HCD", "Database Design", "UI/UX", "System Architecture"],
     image: null,
-    github: "#",
-    demo: "#",
+    github: "https://github.com/VidyaSinha/hcdLAST",
+    demo: "https://madms.vercel.app/",
     icon: <Database className="w-6 h-6 text-ai-red opacity-70" />
   },
   {
@@ -44,8 +44,8 @@ const projects = [
     description: "Developed an interactive Decision Tree & Random Forest Visualizer, helping users to tweak hyper-parameters by using ML algorithm. More than 270 people have used it so far.",
     tech: ["Machine Learning", "Data Visualization", "Python"],
     image: null,
-    github: "#",
-    demo: "#",
+    github: "https://github.com/VidyaSinha/DecisionTree-and-RandomForest-simulator",
+    demo: "https://dtrfsimuator.streamlit.app/",
     icon: <Code className="w-6 h-6 text-ai-red opacity-70" />
   },
   {
@@ -53,7 +53,7 @@ const projects = [
     description: "Created a centralized system for managing blood donation, inventory, and distribution to hospitals, with features for donor registration and emergency blood requests.",
     tech: ["Web Development", "Database", "UI/UX"],
     image: null,
-    github: "#",
+    github: "https://github.com/VidyaSinha/Blood_bank",
     demo: "#",
     icon: <Shield className="w-6 h-6 text-ai-red opacity-70" />
   },
@@ -62,7 +62,7 @@ const projects = [
     description: "Developed a system utilizing image processing to detect driver drowsiness and yawning. The system issues alerts through calls or audio signals to ensure timely driver intervention, enhancing road safety.",
     tech: ["Computer Vision", "Image Processing", "Python"],
     image: null,
-    github: "#",
+    github: "https://github.com/VidyaSinha/Driver-Safety-System",
     demo: "#",
     icon: <Activity className="w-6 h-6 text-ai-red opacity-70" />
   },
@@ -72,7 +72,7 @@ const projects = [
     tech: ["Hardware", "Embedded Systems", "Accessibility"],
     image: null,
     github: "#",
-    demo: "#",
+    demo: "https://www.linkedin.com/posts/nidhidattani_exciting-project-alert-empowering-the-ugcPost-7167877984664576001-P49X?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAD3Ho2cBlQhVoTNHM-dr63zKb6CTaVhBOSU",
     icon: <Lightbulb className="w-6 h-6 text-ai-red opacity-70" />
   }
 ];
@@ -151,7 +151,7 @@ const Projects = () => {
                 <div className="flex space-x-4 mt-auto">
                   <a 
                     href={project.github} 
-                    className="flex items-center text-gray-300 hover:text-ai-red transition-colors duration-300"
+                    className={`flex items-center ${project.github === "#" ? "text-gray-500 cursor-not-allowed" : "text-gray-300 hover:text-ai-red transition-colors duration-300"}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -160,7 +160,7 @@ const Projects = () => {
                   </a>
                   <a 
                     href={project.demo} 
-                    className="flex items-center text-gray-300 hover:text-ai-red transition-colors duration-300"
+                    className={`flex items-center ${project.demo === "#" ? "text-gray-500 cursor-not-allowed" : "text-gray-300 hover:text-ai-red transition-colors duration-300"}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

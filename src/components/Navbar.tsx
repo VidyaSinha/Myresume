@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Brain, Cpu } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,15 +34,16 @@ const Navbar = () => {
             className="flex items-center space-x-2 text-white group"
             onClick={closeMenu}
           >
-            <Cpu className="h-6 w-6 text-ai-red group-hover:animate-pulse transition-all" />
-            <span className="font-bold text-xl tracking-tight">
-              Vidya<span className="text-ai-red">Sinha</span>
-            </span>
+            <img 
+              src="/lovable-uploads/97e1e9cb-4398-41c3-9ae4-91ca51c88c53.png" 
+              alt="Vidya Sinha Logo" 
+              className="h-10 w-auto" 
+            />
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {['about', 'skills', 'experience', 'projects', 'contact'].map((item) => (
+            {['about', 'skills', 'experience', 'projects', 'blogs', 'contact'].map((item) => (
               <a
                 key={item}
                 href={`#${item}`}
@@ -52,6 +53,14 @@ const Navbar = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-ai-red transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
+            <a
+              href="https://drive.google.com/drive/u/0/folders/1lpcQJ2E5KPwVbZJ7IPRaz_T3Iewo8rf-"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ai-button py-2 px-4"
+            >
+              Resume
+            </a>
           </div>
 
           {/* Mobile Navigation Toggle */}
@@ -75,7 +84,7 @@ const Navbar = () => {
       >
         <div className="container mx-auto px-4 py-4">
           <div className="flex flex-col space-y-4">
-            {['about', 'skills', 'experience', 'projects', 'contact'].map((item) => (
+            {['about', 'skills', 'experience', 'projects', 'blogs', 'contact'].map((item) => (
               <a
                 key={item}
                 href={`#${item}`}
@@ -85,6 +94,15 @@ const Navbar = () => {
                 {item}
               </a>
             ))}
+            <a
+              href="https://drive.google.com/drive/u/0/folders/1lpcQJ2E5KPwVbZJ7IPRaz_T3Iewo8rf-"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ai-red py-2"
+              onClick={closeMenu}
+            >
+              Resume
+            </a>
           </div>
         </div>
       </div>

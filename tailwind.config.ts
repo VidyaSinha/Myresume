@@ -136,7 +136,7 @@ export default {
 			},
             backgroundImage: {
                 'hero-pattern': "radial-gradient(circle at 30% 30%, rgba(227, 27, 35, 0.15) 0%, transparent 50%)",
-                'neural-pattern': "url('/placeholder.svg')",
+                'neural-pattern': "url('/lovable-uploads/9ad33002-c6ec-43cb-bd84-6eca83b29fc5.png')",
             }
 		}
 	},

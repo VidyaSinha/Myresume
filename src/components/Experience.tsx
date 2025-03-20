@@ -74,7 +74,7 @@ const Experience = () => {
           <h2 className="section-heading inline-block mx-auto">Experience & Education</h2>
         </div>
 
-        <div className="relative mx-auto max-w-3xl">
+        <div className="relative mx-auto max-w-5xl">
           {/* Timeline line */}
           <div className="absolute left-0 md:left-1/2 top-0 h-full w-px bg-gradient-to-b from-ai-red/40 via-ai-red/20 to-ai-red/5 transform md:-translate-x-1/2"></div>
 
@@ -95,7 +95,7 @@ const Experience = () => {
                   <div className="flex flex-col md:items-end">
                     <h3 className="text-xl font-bold text-white mb-1">{exp.title}</h3>
                     <p className="text-ai-red font-medium mb-2">{exp.company}</p>
-                    <div className="flex items-center space-x-3 text-gray-400 text-sm mb-4">
+                    <div className="flex flex-wrap items-center gap-3 text-gray-400 text-sm mb-4">
                       {exp.location && (
                         <div className="flex items-center">
                           <MapPin className="mr-1 w-4 h-4" />

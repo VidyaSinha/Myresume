@@ -129,7 +129,7 @@ const About = () => {
               >
                 <div className="aspect-w-1 aspect-h-1 rounded-xl overflow-hidden glass-panel" style={{animation: "float-rotate 10s ease-in-out infinite"}}>
                   <img 
-                    src="\lovable-uploads\7e0a0792-6c8c-4716-b57f-6865857bd1bf.png" 
+                    src="/lovable-uploads/7e0a0792-6c8c-4716-b57f-6865857bd1bf.png" 
                     alt="YUVA Young Indians Leadership" 
                     className="w-full h-full object-cover"
                   />

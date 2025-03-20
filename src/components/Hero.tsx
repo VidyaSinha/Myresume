@@ -1,6 +1,6 @@
 
 import { useEffect, useRef } from 'react';
-import { ArrowDown, Brain, Cpu, Cable, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 
 const Hero = () => {
   const titleRef = useRef<HTMLHeadingElement>(null);
@@ -57,7 +57,7 @@ const Hero = () => {
           
           <div className="flex justify-center md:justify-start space-x-4 mb-6 opacity-0 animate-slide-up" style={{ animationDelay: '0.6s' }}>
             <a 
-              href="mailto:vidyasinha030@gmail.com" 
+              href="mailto:vidyasinha939@gmail.com" 
               className="ai-button group"
               aria-label="Email"
             >
@@ -65,17 +65,19 @@ const Hero = () => {
               Contact Me
             </a>
             <a 
-              href="#projects" 
+              href="https://drive.google.com/drive/u/0/folders/1lpcQJ2E5KPwVbZJ7IPRaz_T3Iewo8rf-"
+              target="_blank"
+              rel="noopener noreferrer" 
               className="px-6 py-3 border border-ai-red text-white rounded-lg hover:bg-ai-red/10 transition-all duration-300"
-              aria-label="View Projects"
+              aria-label="View Resume"
             >
-              View Projects
+              View Resume
             </a>
           </div>
           
           <div className="flex justify-center md:justify-start space-x-6 opacity-0 animate-slide-up" style={{ animationDelay: '0.9s' }}>
             <a 
-              href="https://linkedin.com/in/VidyaSinha" 
+              href="https://www.linkedin.com/in/vidyasinha20" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-ai-red transition-colors duration-300"
@@ -84,7 +86,7 @@ const Hero = () => {
               <Linkedin size={24} />
             </a>
             <a 
-              href="https://github.com" 
+              href="https://github.com/VidyaSinha" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-ai-red transition-colors duration-300"
@@ -93,7 +95,7 @@ const Hero = () => {
               <Github size={24} />
             </a>
             <a 
-              href="mailto:vidyasinha030@gmail.com" 
+              href="mailto:vidyasinha939@gmail.com" 
               className="text-gray-400 hover:text-ai-red transition-colors duration-300"
               aria-label="Email contact"
             >
@@ -107,7 +109,7 @@ const Hero = () => {
             <div className="absolute -top-4 -left-4 w-full h-full border-2 border-ai-red opacity-30 rounded-xl"></div>
             <div className="rounded-xl overflow-hidden border-2 border-ai-red/20 shadow-2xl">
               <img 
-                src="\lovable-uploads\783dfd5d-0737-4252-a365-6598c7315044.png" 
+                src="/lovable-uploads/783dfd5d-0737-4252-a365-6598c7315044.png" 
                 alt="Vidya Sinha" 
                 className="w-full h-auto object-cover"
               />

@@ -73,8 +73,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-gray-400 text-sm">Email</h4>
-                  <a href="mailto:vidyasinha030@gmail.com" className="text-white hover:text-ai-red transition-colors">
-                    vidyasinha030@gmail.com
+                  <a href="mailto:vidyasinha939@gmail.com" className="text-white hover:text-ai-red transition-colors">
+                    vidyasinha939@gmail.com
                   </a>
                 </div>
               </div>
@@ -108,12 +108,12 @@ const Contact = () => {
                 <div>
                   <h4 className="text-gray-400 text-sm">LinkedIn</h4>
                   <a 
-                    href="https://linkedin.com/in/VidyaSinha" 
+                    href="https://www.linkedin.com/in/vidyasinha20" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="text-white hover:text-ai-red transition-colors"
                   >
-                    linkedin.com/in/VidyaSinha
+                    linkedin.com/in/vidyasinha20
                   </a>
                 </div>
               </div>
@@ -121,12 +121,19 @@ const Contact = () => {
           </div>
 
           <div className="opacity-0 animate-slide-up" style={{ animationDelay: '0.4s' }}>
-            <form onSubmit={handleSubmit} className="glass-panel rounded-xl p-6 space-y-6">
+            <form 
+              action="mailto:vidyasinha939@gmail.com" 
+              method="post" 
+              encType="text/plain"
+              onSubmit={handleSubmit} 
+              className="glass-panel rounded-xl p-6 space-y-6"
+            >
               <div>
                 <label htmlFor="name" className="block text-white mb-2">Name</label>
                 <input
                   type="text"
                   id="name"
+                  name="name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
@@ -140,6 +147,7 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
@@ -152,6 +160,7 @@ const Contact = () => {
                 <label htmlFor="message" className="block text-white mb-2">Message</label>
                 <textarea
                   id="message"
+                  name="message"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   required

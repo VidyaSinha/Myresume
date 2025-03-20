@@ -6,6 +6,7 @@ import About from '../components/About';
 import Skills from '../components/Skills';
 import Experience from '../components/Experience';
 import Projects from '../components/Projects';
+import TechBlogs from '../components/TechBlogs';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
@@ -18,10 +19,14 @@ const Index = () => {
         const element = document.querySelector(target.hash);
         if (element) {
           e.preventDefault();
+          // Adjust scroll position to account for fixed navbar
           window.scrollTo({
-            top: element.getBoundingClientRect().top + window.scrollY - 80,
+            top: element.getBoundingClientRect().top + window.scrollY - 100,
             behavior: 'smooth'
           });
+          
+          // Update URL without reload
+          window.history.pushState(null, '', target.hash);
         }
       }
     };
@@ -38,6 +43,7 @@ const Index = () => {
       <Skills />
       <Experience />
       <Projects />
+      <TechBlogs />
       <Contact />
       <Footer />
     </div>

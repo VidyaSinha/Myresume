@@ -1,27 +1,22 @@
-# Portfolio Project
+# Welcome to your Portfolio project
 
-A modern portfolio website built with React, Vite, and Tailwind CSS.
+This is a modern portfolio website built with React and TypeScript.
 
 ## Development
 
-```bash
-npm install
-npm run dev
-```
+To run this project locally:
 
-## Building for Production
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run dev`
+
+## Building
+
+To build the project:
 
 ```bash
 npm run build
 ```
-
-## Features
-
-- Modern React with TypeScript
-- Tailwind CSS for styling
-- Responsive design
-- Dark mode support
-- Component library with Radix UI
 
 ## Deployment
 
