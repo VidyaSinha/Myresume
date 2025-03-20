@@ -39,6 +39,9 @@ const Navbar = () => {
               alt="Vidya Sinha Logo" 
               className="h-10 w-auto" 
             />
+            <span className="font-bold text-xl tracking-tight">
+              Vidya<span className="text-ai-red">Sinha</span>
+            </span>
           </Link>
 
           {/* Desktop Navigation */}

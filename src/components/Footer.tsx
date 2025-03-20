@@ -9,14 +9,21 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
-            <div className="flex items-center space-x-2">
-              <span className="font-bold text-xl tracking-tight text-white">
-                Vidya<span className="text-ai-red">Sinha</span>
-              </span>
+            <div className="flex items-center space-x-4">
+              <img 
+                src="/lovable-uploads/97e1e9cb-4398-41c3-9ae4-91ca51c88c53.png" 
+                alt="Vidya Sinha Logo" 
+                className="h-16 w-auto" 
+              />
+              <div>
+                <span className="font-bold text-xl tracking-tight text-white">
+                  Vidya<span className="text-ai-red">Sinha</span>
+                </span>
+                <p className="text-gray-400 mt-2 max-w-md">
+                  Software Developer | Machine Learning | Computer Vision
+                </p>
+              </div>
             </div>
-            <p className="text-gray-400 mt-2 max-w-md">
-              Software Developer | Machine Learning | Computer Vision
-            </p>
           </div>
 
           <div className="flex space-x-8">
