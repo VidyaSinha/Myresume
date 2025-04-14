@@ -10,15 +10,15 @@ const blogs = [
     date: "2023-08-15"
   },
   {
-    title: "The Future of AI: Explainable Models",
+    title: "Can AI predict your dreams?",
     description: "A deep dive into the importance of creating AI models that can explain their decision-making processes.",
-    link: "https://medium.com/@TechwithVidya",
+    link: "https://medium.com/@TechwithVidya/can-ai-predict-your-dreams-03b7ec8c3a76",
     date: "2023-07-01"
   },
   {
-    title: "Computer Vision: From Theory to Application",
+    title: "How Much Math Do I Need to Know to Learn About Computer Vision?",
     description: "How theoretical computer vision concepts are being applied in real-world scenarios and changing industries.",
-    link: "https://medium.com/@TechwithVidya",
+    link: "https://medium.com/@TechwithVidya/how-much-math-do-i-need-to-know-to-learn-about-computer-vision-46360950af62",
     date: "2023-06-10"
   }
 ];

@@ -9,7 +9,7 @@ const projects = [
     tech: ["React", "Node.js", "MongoDB", "Jitsi API"],
     image: null,
     github: "https://github.com/VidyaSinha/PETHUB",
-    demo: "#",
+    demo: "https://htm-2024-cc9r.vercel.app/",
     icon: <MessageCircle className="w-6 h-6 text-ai-red opacity-70" />
   },
   {
@@ -22,12 +22,12 @@ const projects = [
     icon: <Brain className="w-6 h-6 text-ai-red opacity-70" />
   },
   {
-    title: "Art Community Platform",
-    description: "Created a web-based community platform for artists to share work, collaborate, and engage with art enthusiasts. Built with advanced Java technologies focusing on user engagement and content sharing.",
-    tech: ["Advanced Java", "Web Development", "UI/UX", "Database"],
+    title: "DrawYourPixel",
+    description: "Created a project I built to dive deeper into the world of CV and bring a bit of childhood magic to life.",
+    tech: ["Computer Vision", "Python", "OpenCV"],
     image: null,
-    github: "#",
-    demo: "https://vidyabharti20.github.io/Art",
+    github: "https://github.com/VidyaSinha/DrawYourPixel",
+    demo: "https://drawyourpixel-aircanvas.vercel.app/",
     icon: <Users className="w-6 h-6 text-ai-red opacity-70" />
   },
   {
