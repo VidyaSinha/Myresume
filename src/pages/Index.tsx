@@ -9,6 +9,7 @@ import Projects from '../components/Projects';
 import TechBlogs from '../components/TechBlogs';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import YouTubeChannel from '../components/YouTubeChannel';
 
 const Index = () => {
   useEffect(() => {
@@ -44,6 +45,7 @@ const Index = () => {
       <Experience />
       <Projects />
       <TechBlogs />
+      <YouTubeChannel />
       <Contact />
       <Footer />
     </div>
