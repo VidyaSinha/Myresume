@@ -17,8 +17,8 @@ const projects = [
     description: "Developed an AI and Computer Vision system for recognizing different art styles and movements, classifying artworks based on visual characteristics and historical context.",
     tech: ["AI", "Computer Vision", "Deep Learning", "Image Processing"],
     image: null,
-    github: "#",
-    demo: "#",
+    github: "https://github.com/VidyaSinha/ArtStyleRecognition",
+    demo: "https://art-style-recognition.vercel.app/",
     icon: <Brain className="w-6 h-6 text-ai-red opacity-70" />
   },
   {
@@ -33,10 +33,10 @@ const projects = [
   {
     title: "Accreditation & Data Management System",
     description: "Built a comprehensive system for managing institutional accreditation processes and organizing large volumes of assessment data for educational institutions.",
-    tech: ["HCD", "Database Design", "UI/UX", "System Architecture"],
+    tech: ["Typescript", "Database Design", "UI/UX", "System Architecture"],
     image: null,
-    github: "https://github.com/VidyaSinha/hcdLAST",
-    demo: "https://madms.vercel.app/",
+    github: "https://github.com/VidyaSinha/MADMS_bounceback",
+    demo: "https://madms-assistant.vercel.app/",
     icon: <Database className="w-6 h-6 text-ai-red opacity-70" />
   },
   {
